@@ -15,19 +15,22 @@ body {
   flex-direction: column;
 }
 
-/* القلب */
+/* 🔥 كبّرنا القلب كتير */
 .heart-svg {
-  width: 250px;
+  width: 500px;
 }
 
 /* رسم القلب */
 #heartPath {
   fill: transparent;
   stroke: red;
-  stroke-width: 4;
+  stroke-width: 5;
   stroke-dasharray: 500;
   stroke-dashoffset: 500;
-  animation: draw 2s ease forwards, fillHeart 1s ease forwards 2s, beat 1s infinite 3s;
+  transform-origin: center;
+  animation: draw 2s ease forwards,
+             fillHeart 1s ease forwards 2s,
+             beat 1s infinite 3s;
 }
 
 /* يرسم */
@@ -40,17 +43,17 @@ body {
   to { fill: red; }
 }
 
-/* ينبض */
+/* 🔥 نبض أقوى */
 @keyframes beat {
   0%,100% { transform: scale(1); }
-  50% { transform: scale(1.1); }
+  50% { transform: scale(1.2); }
 }
 
 /* الاسم */
 #name {
   color: white;
-  font-size: 40px;
-  margin-top: 20px;
+  font-size: 60px;
+  margin-top: 30px;
   border-right: 3px solid white;
   white-space: nowrap;
   overflow: hidden;
